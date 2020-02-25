@@ -14,11 +14,12 @@ int main(){
 	cout << "b = " << b << endl;
 	cout << "c = " << c << endl;
 	cout << "x = " << x << endl;
-	cout << "y = " << y << endl;
+	cout << "y = " << (void *)y << endl;
 	cout << "z = " << z << endl;
+
 	cout << "\n&a = " << &a << endl;
-	cout << "&b = " << &b << endl;
-	cout << "&c = " << &c << endl;
+	cout << "&b = " << (void *)&b << endl;
+	cout << "&c = " << (void *)&c << endl;
 	cout << "&x = " << &x << endl;
 	cout << "&y = " << &y << endl;
 	cout << "&z = " << &z << endl;
@@ -29,7 +30,7 @@ int main(){
 	cout << "b = " << b << endl;
 	cout << "c = " << c << endl;
 	cout << "x = " << x << endl;
-	cout << "y = " << y << endl;
+	cout << "y = " << (void *)y << endl;
 	cout << "z = " << z << endl;
 
 	*y = 'W'; //เปลี่ยนค่าของตัวแปร b ให้เป็นตัวอักษร W โดยการกำหนดผ่าน Pointer y
@@ -38,7 +39,7 @@ int main(){
 	cout << "b = " << b << endl;
 	cout << "c = " << c << endl;
 	cout << "x = " << x << endl;
-	cout << "y = " << y << endl;
+	cout << "y = " << (void *)y << endl;
 	cout << "z = " << z << endl;
 
 	*x = 6; //เปลี่ยนค่าของตัวแปร a ให้เป็น 6 โดยการกำหนดผ่าน Pointer x
@@ -47,7 +48,7 @@ int main(){
 	cout << "b = " << b << endl;
 	cout << "c = " << c << endl;
 	cout << "x = " << x << endl;
-	cout << "y = " << y << endl;
+	cout << "y = " << (void *)y << endl;
 	cout << "z = " << z << endl;
 
 	**z = 7; //เปลี่ยนค่าของตัวแปร a ให้เป็น 7 โดยการกำหนดผ่าน Pointer z
@@ -56,7 +57,7 @@ int main(){
 	cout << "b = " << b << endl;
 	cout << "c = " << c << endl;
 	cout << "x = " << x << endl;
-	cout << "y = " << y << endl;
+	cout << "y = " << (void *)y << endl;
 	cout << "z = " << z << endl;
 	
 	return 0;
